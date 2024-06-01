@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e129789ed6d28d6951f824d35eb65fda {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e129789ed6d28d6951f824d35eb65fda" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e129789ed6d28d6951f824d35eb65fda = L.map(
+                "map_e129789ed6d28d6951f824d35eb65fda",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28eee360a0e4fae5d063efe36e8cc62a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_28eee360a0e4fae5d063efe36e8cc62a.addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+            var marker_e5cb619af0894f83bdfbbb0de150297f = L.marker(
+                [33.4484, -112.074],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_055e7fdd5479ba374f3abb447ee9db50 = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/484/484167.png"});
+        marker_e5cb619af0894f83bdfbbb0de150297f.setIcon(custom_icon_055e7fdd5479ba374f3abb447ee9db50);
+        
+    
+        var popup_7ab617e888fcef90bf07e5c20ed9995d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dee953b4bd59ed955795b0f0786f7403 = $(`<div id="html_dee953b4bd59ed955795b0f0786f7403" style="width: 100.0%; height: 100.0%;">Phoenix, AZ - Starting point</div>`)[0];
+                popup_7ab617e888fcef90bf07e5c20ed9995d.setContent(html_dee953b4bd59ed955795b0f0786f7403);
+            
+        
+
+        marker_e5cb619af0894f83bdfbbb0de150297f.bindPopup(popup_7ab617e888fcef90bf07e5c20ed9995d)
+        ;
+
+        
+    
+    
+            var marker_d15602b1b34eabf27eb8080e5697972b = L.marker(
+                [36.1069, -112.1129],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_3e4ebd4227856f643dee8ab2b343a4b2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_d15602b1b34eabf27eb8080e5697972b.setIcon(custom_icon_3e4ebd4227856f643dee8ab2b343a4b2);
+        
+    
+        var popup_31080c9a4f0571d1cde72d465648032f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f106f279299a7eec1a47b35a943246 = $(`<div id="html_05f106f279299a7eec1a47b35a943246" style="width: 100.0%; height: 100.0%;">Grand Canyon NP, AZ - Distance from Phoenix, AZ: 229 mi, Travel Time: 3 hours 36 mins</div>`)[0];
+                popup_31080c9a4f0571d1cde72d465648032f.setContent(html_05f106f279299a7eec1a47b35a943246);
+            
+        
+
+        marker_d15602b1b34eabf27eb8080e5697972b.bindPopup(popup_31080c9a4f0571d1cde72d465648032f)
+        ;
+
+        
+    
+    
+            var marker_ed73957f229fc911441cbd7c7b112e86 = L.marker(
+                [37.2982, -113.0263],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_1de1143dd53e7f0c9addb7f9dfdfadcf = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_ed73957f229fc911441cbd7c7b112e86.setIcon(custom_icon_1de1143dd53e7f0c9addb7f9dfdfadcf);
+        
+    
+        var popup_480a569ca91c76ff11b3e808f302cecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f8ec04c23c6b98021a4709a509fdaae = $(`<div id="html_4f8ec04c23c6b98021a4709a509fdaae" style="width: 100.0%; height: 100.0%;">Zion NP, UT - Distance from Grand Canyon NP, AZ: N/A, Travel Time: N/A</div>`)[0];
+                popup_480a569ca91c76ff11b3e808f302cecf.setContent(html_4f8ec04c23c6b98021a4709a509fdaae);
+            
+        
+
+        marker_ed73957f229fc911441cbd7c7b112e86.bindPopup(popup_480a569ca91c76ff11b3e808f302cecf)
+        ;
+
+        
+    
+    
+            var marker_a103fd58fdf9a3051f4394843d4c9706 = L.marker(
+                [37.593, -112.1871],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_75d05757d29996db736fb444cf9a15cc = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_a103fd58fdf9a3051f4394843d4c9706.setIcon(custom_icon_75d05757d29996db736fb444cf9a15cc);
+        
+    
+        var popup_371ee9eb4d15542894fd9cb8a4d061ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1f75b50a6ab9695576c43c8320ee5f8 = $(`<div id="html_c1f75b50a6ab9695576c43c8320ee5f8" style="width: 100.0%; height: 100.0%;">Bryce Canyon NP, UT - Distance from Zion NP, UT: N/A, Travel Time: N/A</div>`)[0];
+                popup_371ee9eb4d15542894fd9cb8a4d061ee.setContent(html_c1f75b50a6ab9695576c43c8320ee5f8);
+            
+        
+
+        marker_a103fd58fdf9a3051f4394843d4c9706.bindPopup(popup_371ee9eb4d15542894fd9cb8a4d061ee)
+        ;
+
+        
+    
+    
+            var marker_cab5bb41166f8995839de1189bf1cc6f = L.marker(
+                [38.7331, -109.5925],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_ce06141cc96e18eea11a2fb57dce937d = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_cab5bb41166f8995839de1189bf1cc6f.setIcon(custom_icon_ce06141cc96e18eea11a2fb57dce937d);
+        
+    
+        var popup_4536208e81b314f3920b729d66a978fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7e412cd62ffe9977a080375ade84dec = $(`<div id="html_c7e412cd62ffe9977a080375ade84dec" style="width: 100.0%; height: 100.0%;">Arches NP, UT - Distance from Bryce Canyon NP, UT: 267 mi, Travel Time: 5 hours 27 mins</div>`)[0];
+                popup_4536208e81b314f3920b729d66a978fe.setContent(html_c7e412cd62ffe9977a080375ade84dec);
+            
+        
+
+        marker_cab5bb41166f8995839de1189bf1cc6f.bindPopup(popup_4536208e81b314f3920b729d66a978fe)
+        ;
+
+        
+    
+    
+            var marker_0c0c1203dd41fbfc1bdcd737739bfab5 = L.marker(
+                [43.7904, -110.7325],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_6dbb1a12cc857527988ecd1440ad875e = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_0c0c1203dd41fbfc1bdcd737739bfab5.setIcon(custom_icon_6dbb1a12cc857527988ecd1440ad875e);
+        
+    
+        var popup_23040a099e8235b331bfbb9ffe142cc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a38d04ac8b9bb3f4755b75841700d116 = $(`<div id="html_a38d04ac8b9bb3f4755b75841700d116" style="width: 100.0%; height: 100.0%;">Grand Teton NP, WY - Distance from Arches NP, UT: 513 mi, Travel Time: 9 hours 21 mins</div>`)[0];
+                popup_23040a099e8235b331bfbb9ffe142cc1.setContent(html_a38d04ac8b9bb3f4755b75841700d116);
+            
+        
+
+        marker_0c0c1203dd41fbfc1bdcd737739bfab5.bindPopup(popup_23040a099e8235b331bfbb9ffe142cc1)
+        ;
+
+        
+    
+    
+            var marker_dccbe124709cce618adf5c911904aed1 = L.marker(
+                [44.428, -110.5885],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_99174d03605121ebe2b32d5a2a378beb = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_dccbe124709cce618adf5c911904aed1.setIcon(custom_icon_99174d03605121ebe2b32d5a2a378beb);
+        
+    
+        var popup_45ac8e924c303f9140566e13789084c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90fb0c9e51a9530dafec9fb1522448c6 = $(`<div id="html_90fb0c9e51a9530dafec9fb1522448c6" style="width: 100.0%; height: 100.0%;">Yellowstone NP, WY - Distance from Grand Teton NP, WY: 57.8 mi, Travel Time: 1 hour 32 mins</div>`)[0];
+                popup_45ac8e924c303f9140566e13789084c2.setContent(html_90fb0c9e51a9530dafec9fb1522448c6);
+            
+        
+
+        marker_dccbe124709cce618adf5c911904aed1.bindPopup(popup_45ac8e924c303f9140566e13789084c2)
+        ;
+
+        
+    
+    
+            var marker_ed311ac1816676e4a38977828d813b30 = L.marker(
+                [40.3428, -105.6836],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_e7c2ce27225ef88271e92a64cb34de20 = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/65/65000.png"});
+        marker_ed311ac1816676e4a38977828d813b30.setIcon(custom_icon_e7c2ce27225ef88271e92a64cb34de20);
+        
+    
+        var popup_f3fb7cd09cda2c066033b347b01a5b27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_596516b1ac1aa35a57e0833e15609d39 = $(`<div id="html_596516b1ac1aa35a57e0833e15609d39" style="width: 100.0%; height: 100.0%;">Rocky Mountain NP, CO - Distance from Yellowstone NP, WY: 513 mi, Travel Time: 9 hours 10 mins</div>`)[0];
+                popup_f3fb7cd09cda2c066033b347b01a5b27.setContent(html_596516b1ac1aa35a57e0833e15609d39);
+            
+        
+
+        marker_ed311ac1816676e4a38977828d813b30.bindPopup(popup_f3fb7cd09cda2c066033b347b01a5b27)
+        ;
+
+        
+    
+    
+            var marker_f2b903b7fc464812747077d64587f082 = L.marker(
+                [39.7392, -104.9903],
+                {}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+    
+        var custom_icon_87839cc032622406aeb3bc036d3a2695 = L.icon({"iconSize": [30, 30], "iconUrl": "https://image.flaticon.com/icons/png/512/484/484167.png"});
+        marker_f2b903b7fc464812747077d64587f082.setIcon(custom_icon_87839cc032622406aeb3bc036d3a2695);
+        
+    
+        var popup_14d368b698ffd093a986afc2237e9995 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a0140383a4e9828684593d4f387013d = $(`<div id="html_5a0140383a4e9828684593d4f387013d" style="width: 100.0%; height: 100.0%;">Denver, CO - Distance from Rocky Mountain NP, CO: 73.5 mi, Travel Time: 1 hour 47 mins</div>`)[0];
+                popup_14d368b698ffd093a986afc2237e9995.setContent(html_5a0140383a4e9828684593d4f387013d);
+            
+        
+
+        marker_f2b903b7fc464812747077d64587f082.bindPopup(popup_14d368b698ffd093a986afc2237e9995)
+        ;
+
+        
+    
+    
+            var poly_line_1a68a3f0a1eda4cc8dbc4089f7c1102a = L.polyline(
+                [[33.4484, -112.074], [36.1069, -112.1129], [37.2982, -113.0263], [37.593, -112.1871], [38.7331, -109.5925], [43.7904, -110.7325], [44.428, -110.5885], [40.3428, -105.6836], [39.7392, -104.9903]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e129789ed6d28d6951f824d35eb65fda);
+        
+</script>
+</html>
